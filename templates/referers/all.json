@@ -1,0 +1,9 @@
+{
+  "status": true,
+  "data": {
+    "{{#each data}}": {
+      "id": "{{#? this.id}}",
+      "refererName": "{{#? this.refererName}}"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "status": true,
+  "data": {
+    "{{#each data}}": {
+      "id": "{{#? this.id}}",
+      "name": "{{#? this.name}}",
+      "unit": "{{#? this.Unit}}",
+      "methodology": "{{#? this.Method}}",
+      "result": "{{#? this.AppointmentDetails[0].ExaminationDetail.value}}",
+      "examGroup": "{{#? this.ExaminationGroup}}",
+      "examinationReferenceValues": {
+        "{{#each this.examinationReferenceValues}}": {
+          "id": "{{#? this.id}}",
+          "name": "{{#? this.name}}"
+        }
+      }
+    }
+  }
+}

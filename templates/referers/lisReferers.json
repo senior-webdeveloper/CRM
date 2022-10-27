@@ -1,0 +1,15 @@
+{
+  "status": true,
+  "total": "{{data.total}}",
+  "count": "{{data.count}}",
+  "data": {
+    "{{#each data.rows}}": {
+      "referer": {
+        "id": "{{#? this.Referer.id}}",
+        "refererName": "{{#? this.Referer.refererName}}"
+        
+      }
+
+    }
+  }
+}

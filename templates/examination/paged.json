@@ -1,0 +1,29 @@
+{
+  "status": true,
+  "total": "{{#? data.total}}",
+  "count": "{{#? data.count}}",
+  "data": {
+    "{{#each data.rows}}": {
+      "id": "{{#? this.id}}",
+      "name": "{{#? this.name}}",
+      "code": "{{#? this.code}}",
+      "indications": "{{#? this.indications}}",
+      "status": "{{#? this.status}}",
+      "observation": "{{#? this.Appointments[0].AppointmentDetail.observation}}",
+      "typeSample": "{{#? this.typeSample}}",
+      "supplies": "{{#? this.supplies}}",
+      "storageTemperature": "{{#? this.storageTemperature}}",
+      "fastingConditions": "{{#? this.fastingConditions}}",
+      "runFrequency": "{{#? this.runFrequency}}",
+      "processTime": "{{#? this.processTime}}",
+      "volume": "{{#? this.volume}}",
+      "reportTime": "{{#? this.reportTime}}",
+      "service": {
+        "id": "{{#? this.Service.id}}",
+        "name": "{{#? this.Service.name}}",
+        "description": "{{#? this.Service.description}}"
+      },
+      "examinationGroups": "{{#? this.examinationGroups}}"
+    }
+  }
+}

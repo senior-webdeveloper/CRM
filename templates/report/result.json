@@ -1,0 +1,13 @@
+{
+  "status": true,
+  "total": "{{#? data.total}}",
+  "count": "{{#? data.count}}",
+  "data": {
+    "AgreementId": "{{#?  data.rows[0].PriceList.AgreementId}}",
+    "ResponsibleId": "{{#? data.rows[0].ResponsibleId}}",
+    "responsible": "{{#? data.rows[0].Responsible.fullName}}",
+    "SpecialityId": "{{#? data.rows[0].Responsible.SpecialityId}}",
+    "specialityName": "{{#? data.rows[0].Responsible.Speciality.name}}",
+    "examinationIds": "{{#? data.examinationIds}}"
+  }
+}

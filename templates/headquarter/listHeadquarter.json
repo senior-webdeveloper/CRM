@@ -1,0 +1,13 @@
+{
+  "status": true,
+  "data": {
+    "{{#each data}}": {
+      "id": "{{#? this.id}}",
+      "name": "{{#? this.name}}",
+      "address": "{{#? this.address}}",
+      "tlfNumber": "{{#? this.tlfNumber}}",
+      "email": "{{#? this.email}}",
+      "urlImage": "{{#? this.urlImage}}"
+    }
+  }
+}

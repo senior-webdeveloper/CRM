@@ -1,0 +1,41 @@
+{
+  "status": true,
+  "total": "{{#? data.total}}",
+  "count": "{{#? data.count}}",
+  "data": {
+    "result": "{{#? data.rows[0].Examinations[0].Appointments[0].result}}",
+    "ResponsibleId": "{{#? data.rows[0].Examinations[0].Appointments[0].ResponsibleId}}",
+    "responsible": "{{#? data.rows[0].Examinations[0].Appointments[0].Responsible.fullName}}",
+    "SpecialityId": "{{#? data.rows[0].Examinations[0].Appointments[0].Responsible.SpecialityId}}",
+    "specialityName": "{{#? data.rows[0].Examinations[0].Appointments[0].Responsible.Speciality.name}}",
+    "digitalSignatureUrl": "{{#? data.rows[0].Examinations[0].Appointments[0].Responsible.digitalSignatureUrl}}",
+    "services": {
+      "{{#each data.rows}}": {
+        "id": "{{#? this.id}}",
+        "name": "{{#? this.name}}",
+        "description": "{{#? this.description}}",
+        "examinations": {
+          "{{#each this.Examinations}}": {
+            "id": "{{#? this.id}}",
+            "name": "{{#? this.name}}",
+            "code": "{{#? this.code}}",
+            "indications": "{{#? this.indications}}",
+            "status": "{{#? this.status}}",
+            "typeSample": "{{#? this.typeSample}}",
+            "supplies": "{{#? this.supplies}}",
+            "storageTemperature": "{{#? this.storageTemperature}}",
+            "fastingConditions": "{{#? this.fastingConditions}}",
+            "runFrequency": "{{#? this.runFrequency}}",
+            "processTime": "{{#? this.processTime}}",
+            "volume": "{{#? this.volume}}",
+            "reportTime": "{{#? this.reportTime}}",
+            "appointmentDetailId": "{{#? this.Appointments[0].AppointmentDetail.id}}",
+            "examinationGroups": "{{#? this.examinationGroups}}"
+          }
+        },
+
+        "result": "{{#? this.result }}"
+      }
+    }
+  }
+}

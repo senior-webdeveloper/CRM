@@ -1,0 +1,11 @@
+{
+  "status": true,
+  "data": {
+    "id": "{{#? headquarter.id}}",
+    "name": "{{#? headquarter.name}}",
+    "address": "{{#? headquarter.address}}",
+    "tlfNumber": "{{#? headquarter.tlfNumber}}",
+    "email": "{{#? headquarter.email}}",
+    "urlImage": "{{#? headquarter.urlImage}}"
+  }
+}
